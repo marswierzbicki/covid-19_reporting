@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <style>
+		body {
+			background: rgb(204,204,204); 
+		}
+		.a4{
+			background: white;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 0.2in;
+			margin-bottom: 0.2in;
+			height: 10.8in;
+			width: 7.5in; 
+			display: block;
+			padding: 0.4in;
+			box-shadow: 0 0 0.2in rgba(0,0,0,0.5);
+		}
+		img {
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		.top {
+			font-size: 0.39in;
+			padding-bottom: 0.1in;
+			text-align: center;
+			display: block;
+		}
+		@page {
+			size: A4
+			margin: 0;
+		}
+		@media print {
+			html, body {
+				height: 11.3in;
+				width: 7.9in;        
+			}
+			.a4 {
+				margin: 0;
+				width: initial;
+				min-height: initial;
+				box-shadow: initial;
+				background: initial;
+				page-break-after: always;
+			}
+		}
+	  </style>
+	</head>
+	<body>
+	  <div class="a4">
+		<div class="top">Poland - COVID-19 report for 2020-07-19</div>
+		<img src="src/poland_new_cases.png" />
+		<img src="src/poland_cases_per_100k.png" />
+	  </div>
+	  <div class="a4">
+		<div class="top">Europe - COVID-19 report for 2020-07-19</div>
+		<img src="src/europe_new_cases.png" />
+		<img src="src/europe_cases_per_100k.png" />
+	  </div>
+	  <div class="a4">
+		<div class="top">World - COVID-19 report for 2020-07-19</div>
+		<img src="src/world_new_cases.png" />
+		<img src="src/world_cases_per_100k.png" />
+	  </div>
+	</body>
+</html>
